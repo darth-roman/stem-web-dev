@@ -1,3 +1,14 @@
+:root{
+    --vegies: #2B9348;
+    --vegies-light: #71D68D;
+
+    --fruit: #F3722C;
+    --fruit-light: #F8B18B;
+
+    --other: #277DA1;
+    --other-light: #8CC9E3;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -14,13 +25,67 @@ body{
 }
 
 .container{
-    margin-top: 30%;
+    margin-top: 30vh;
     background-color: #ababab;
     display: flex;
     flex-direction: column;
 }
 
-.container form{
+.container .add-new-item{
     display: flex;
+    flex-direction: column;
     padding: 20px;
+}
+
+.input select{
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px black solid;
+    border-radius: 30px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.add-new-item .input input{
+    padding: 5px;
+    border-radius: 30px;
+    margin: 4px;
+    border: solid black 1px;
+}
+
+.add-new-item button{
+    padding: 5px;
+    border-radius: 30px;
+    border: solid black 1px;
+    background-color:antiquewhite;
+    width: 40%;
+}
+
+.shoping-list-container{
+    padding: 10px;
+}
+.shoping-list-container .shoping-list{
+    list-style: none;
+    padding: 0;
+}
+
+.shoping-list-container .shoping-list .shoping-item{
+    margin: 5px ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.fruit{
+    background-color: var(--fruit-light) ;
+    border: 3px solid var(--fruit);
+}
+
+.vegies{
+    background-color: var(--vegies-light) ;
+    border: 3px solid var(--vegies);
+}
+
+.other{
+    background-color: var(--other-light) ;
+    border: 3px solid var(--other);
 }

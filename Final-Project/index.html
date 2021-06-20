@@ -9,12 +9,20 @@
 </head>
 <body>
     <div class="container">
-        <form action="#" class="add-new-item">
+        <div class="add-new-item" id="form">
             <div class="input">
                 <input type="text" name="item" id="item-input">
             </div>
-            <button type="submit">Add</button>
-        </form>
+            <div class="input">
+                <select name="type" id="type">
+                    <option value="">Select your type</option>
+                    <option value="fruit">Fruits</option>
+                    <option value="vegies">Vegies</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button id="btn">Add Me</button>
+            </div>
         
         <div class="shoping-list-container">
             <ul class="shoping-list">
