@@ -47,7 +47,7 @@ body{
 }
 
 .add-new-item .input input{
-    padding: 5px;
+    padding: 10px;
     border-radius: 30px;
     margin: 4px;
     border: solid black 1px;

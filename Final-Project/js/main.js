@@ -1,7 +1,6 @@
 const form = document.getElementById("form")
 const btn = document.getElementById("btn")
 const shopingList = document.getElementsByClassName("shoping-list")[0]
-//console.log(form);
 
 btn.addEventListener("click", function(){
     const item = document.getElementById("item-input")
@@ -12,11 +11,9 @@ btn.addEventListener("click", function(){
     newItem.classList=`shoping-item ${typeOfItem.value}`
     newItem.appendChild(itemText)
 
-    // const newItem = `
-    //     <li class="shoping-list ${typeOfItem.value}">${item.value}</li>
-    // `
-
     shopingList.append(newItem)
+
+    item.value=""
     
     console.log(item.value, typeOfItem.value);
 })
